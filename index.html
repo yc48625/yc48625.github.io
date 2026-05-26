@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Personal academic homepage for Xiaohe Xu with research profile, animated presentation, and ResearchGate link."
+    />
+    <title>Xiaohe Xu | Personal Homepage</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="research-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Xiaohe Xu homepage">
+        <span class="brand-mark">XX</span>
+        <span>Xiaohe Xu</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#presentation">Presentation</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Personal Academic Homepage</p>
+          <h1>Xiaohe Xu</h1>
+          <p class="hero-text">
+            A research-focused profile page for presenting publications,
+            collaborations, academic interests, and an animated HTML
+            presentation in a clean GitHub Pages format.
+          </p>
+          <div class="hero-actions" aria-label="Main actions">
+            <a class="button primary" href="#presentation">View Presentation</a>
+            <a
+              class="button secondary"
+              href="https://www.researchgate.net/profile/Xiaohe-Xu-5"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ResearchGate
+            </a>
+          </div>
+        </div>
+
+        <div class="orbit-panel" aria-label="Animated research topics">
+          <div class="orbit-center">
+            <span>Research</span>
+          </div>
+          <span class="orbit-item item-a">Publications</span>
+          <span class="orbit-item item-b">Methods</span>
+          <span class="orbit-item item-c">Collaboration</span>
+          <span class="orbit-item item-d">Impact</span>
+        </div>
+      </section>
+
+      <section id="about" class="section intro-grid">
+        <div>
+          <p class="section-label">About</p>
+          <h2>Research profile built for clarity.</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            This homepage introduces Xiaohe Xu in an academic style, linking
+            visitors to the full ResearchGate profile while leaving room for
+            course requirements, project summaries, publication highlights, and
+            future updates.
+          </p>
+          <p>
+            The page is designed as a complete static website, so it can be
+            published at a <strong>github.io</strong> address by uploading these
+            files to a GitHub Pages repository.
+          </p>
+        </div>
+      </section>
+
+      <section id="research" class="section research-section">
+        <div class="section-heading">
+          <p class="section-label">Research</p>
+          <h2>Areas to highlight</h2>
+        </div>
+        <div class="topic-grid">
+          <article class="topic-card">
+            <span class="topic-number">01</span>
+            <h3>Publication Record</h3>
+            <p>
+              Curate selected papers, preprints, conference work, and citation
+              links from ResearchGate or other academic databases.
+            </p>
+          </article>
+          <article class="topic-card">
+            <span class="topic-number">02</span>
+            <h3>Research Interests</h3>
+            <p>
+              Present core research themes, methods, datasets, and long-term
+              questions in a concise portfolio format.
+            </p>
+          </article>
+          <article class="topic-card">
+            <span class="topic-number">03</span>
+            <h3>Collaboration</h3>
+            <p>
+              Provide a professional contact point for classmates, supervisors,
+              and future research collaborators.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline-section" aria-labelledby="timeline-title">
+        <div class="section-heading">
+          <p class="section-label">Academic Snapshot</p>
+          <h2 id="timeline-title">A compact personal timeline</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span>Now</span>
+            <p>Maintain a public research profile and publication list.</p>
+          </div>
+          <div class="timeline-item">
+            <span>Focus</span>
+            <p>Build readable summaries of projects, outputs, and methods.</p>
+          </div>
+          <div class="timeline-item">
+            <span>Next</span>
+            <p>Update this site with selected publications and course work.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="presentation" class="section presentation-section">
+        <div class="section-heading">
+          <p class="section-label">HTML Presentation</p>
+          <h2>Animated research introduction</h2>
+        </div>
+
+        <div class="presentation-shell">
+          <div class="slides" aria-live="polite">
+            <article class="slide is-active" data-slide="0">
+              <p class="slide-kicker">Slide 01</p>
+              <h3>Who I Am</h3>
+              <p>
+                Xiaohe Xu's personal homepage connects academic identity,
+                research output, and online visibility in one concise profile.
+              </p>
+            </article>
+            <article class="slide" data-slide="1">
+              <p class="slide-kicker">Slide 02</p>
+              <h3>What I Show</h3>
+              <p>
+                Visitors can quickly find research interests, selected work,
+                professional links, and an animated overview of the profile.
+              </p>
+            </article>
+            <article class="slide" data-slide="2">
+              <p class="slide-kicker">Slide 03</p>
+              <h3>Why It Works</h3>
+              <p>
+                GitHub Pages keeps the site lightweight, public, and easy to
+                maintain with standard HTML, CSS, and JavaScript.
+              </p>
+            </article>
+          </div>
+
+          <div class="presentation-controls">
+            <button class="icon-button" id="prev-slide" type="button" aria-label="Previous slide">
+              <span aria-hidden="true">‹</span>
+            </button>
+            <div class="slide-dots" aria-label="Slide progress">
+              <button type="button" class="dot is-active" data-target="0" aria-label="Go to slide 1"></button>
+              <button type="button" class="dot" data-target="1" aria-label="Go to slide 2"></button>
+              <button type="button" class="dot" data-target="2" aria-label="Go to slide 3"></button>
+            </div>
+            <button class="icon-button" id="next-slide" type="button" aria-label="Next slide">
+              <span aria-hidden="true">›</span>
+            </button>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <span id="slide-progress"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2>Find the full profile online.</h2>
+        </div>
+        <div class="contact-actions">
+          <a
+            class="button primary"
+            href="https://www.researchgate.net/profile/Xiaohe-Xu-5"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open ResearchGate
+          </a>
+          <a class="button secondary" href="#top">Back to top</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Xiaohe Xu. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
