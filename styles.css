@@ -128,8 +128,8 @@ main {
   grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
   gap: clamp(28px, 5vw, 70px);
   align-items: center;
-  min-height: calc(100vh - 98px);
-  padding: 44px 0 64px;
+  min-height: min(720px, calc(100vh - 98px));
+  padding: 34px 0 34px;
 }
 
 .eyebrow,
@@ -316,11 +316,20 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
+#about {
+  padding-top: clamp(28px, 5vw, 52px);
+}
+
 .intro-grid,
 .contact-section {
   display: grid;
   grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.25fr);
   gap: clamp(24px, 5vw, 64px);
+}
+
+.intro-grid {
+  grid-template-columns: minmax(160px, 0.52fr) minmax(0, 1.08fr) minmax(220px, 0.5fr);
+  align-items: center;
 }
 
 .section-body p {
@@ -331,6 +340,21 @@ h3 {
 
 .section-body p:last-child {
   margin-bottom: 0;
+}
+
+.profile-photo {
+  margin: 0;
+}
+
+.profile-photo img {
+  display: block;
+  width: 100%;
+  max-width: 270px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid rgba(29, 37, 40, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 18px 45px rgba(29, 37, 40, 0.12);
 }
 
 .section-heading {
@@ -658,6 +682,10 @@ h3 {
   .intro-grid,
   .contact-section {
     grid-template-columns: 1fr;
+  }
+
+  .profile-photo img {
+    max-width: 320px;
   }
 
   .hero {
