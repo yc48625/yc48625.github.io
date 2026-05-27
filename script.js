@@ -112,27 +112,31 @@ function queueNextSlide() {
   }
 }
 
-document.getElementById("prev-slide").addEventListener("click", () => {
-  showSlide(activeSlide - 1);
-  queueNextSlide();
-});
-
-document.getElementById("next-slide").addEventListener("click", () => {
-  showSlide(activeSlide + 1);
-  queueNextSlide();
-});
-
-dots.forEach((dot) => {
-  dot.addEventListener("click", () => {
-    showSlide(Number(dot.dataset.target));
+if (slides.length > 0) {
+  document.getElementById("prev-slide")?.addEventListener("click", () => {
+    showSlide(activeSlide - 1);
     queueNextSlide();
   });
-});
+
+  document.getElementById("next-slide")?.addEventListener("click", () => {
+    showSlide(activeSlide + 1);
+    queueNextSlide();
+  });
+
+  dots.forEach((dot) => {
+    dot.addEventListener("click", () => {
+      showSlide(Number(dot.dataset.target));
+      queueNextSlide();
+    });
+  });
+}
 
 window.addEventListener("resize", resizeCanvas);
 prefersReducedMotion.addEventListener("change", startCanvas);
 
 document.getElementById("year").textContent = new Date().getFullYear();
 startCanvas();
-showSlide(0);
-queueNextSlide();
+if (slides.length > 0) {
+  showSlide(0);
+  queueNextSlide();
+}

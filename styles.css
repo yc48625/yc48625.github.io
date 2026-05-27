@@ -159,8 +159,8 @@ h3 {
 }
 
 h1 {
-  max-width: 8ch;
-  font-size: clamp(4.2rem, 9vw, 8.6rem);
+  max-width: 10ch;
+  font-size: clamp(3.2rem, 6.8vw, 6.2rem);
 }
 
 h2 {
@@ -343,7 +343,7 @@ h3 {
 
 .topic-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -367,18 +367,93 @@ h3 {
 }
 
 .topic-number {
+  display: inline-block;
+  margin-top: 18px;
   color: var(--gold);
   font-size: 0.86rem;
   font-weight: 900;
 }
 
 .topic-card h3 {
-  margin-top: 46px;
+  margin-top: 20px;
 }
 
 .topic-card p {
   margin: 16px 0 0;
   color: var(--muted);
+}
+
+.topic-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border: 1px solid rgba(29, 37, 40, 0.08);
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  border: 1px solid rgba(29, 37, 40, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 16px 46px rgba(29, 37, 40, 0.08);
+  overflow: hidden;
+  transition:
+    transform 200ms ease,
+    border-color 200ms ease,
+    background 200ms ease;
+}
+
+.project-card:hover {
+  border-color: rgba(44, 135, 149, 0.44);
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-5px);
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 8.2;
+  object-fit: contain;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(29, 37, 40, 0.1);
+}
+
+.project-image-small {
+  width: 82%;
+  margin: 18px auto;
+  border: 1px solid rgba(29, 37, 40, 0.08);
+}
+
+.project-content {
+  padding: 22px 24px 24px;
+}
+
+.project-content h3 {
+  font-size: clamp(1.15rem, 1.7vw, 1.55rem);
+  line-height: 1.28;
+}
+
+.journal {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.email-link {
+  color: var(--green);
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: rgba(47, 111, 94, 0.28);
+  text-underline-offset: 4px;
 }
 
 .timeline {
@@ -597,6 +672,10 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
   .section-heading {
     align-items: start;
     flex-direction: column;
@@ -615,7 +694,7 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(3.4rem, 18vw, 5.4rem);
+    font-size: clamp(2.8rem, 14vw, 4.4rem);
   }
 
   .hero-actions,
