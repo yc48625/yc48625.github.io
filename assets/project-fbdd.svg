@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 430" role="img" aria-labelledby="title desc">
+  <title id="title">FBDD covalent compound library design workflow</title>
+  <desc id="desc">A scientific workflow diagram showing non-covalent and covalent binders, ligands, fragments, and recombined libraries.</desc>
+  <defs>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#77a7f7"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#62c792"/>
+    </marker>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f5fbff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="920" height="430" fill="#ffffff"/>
+
+  <g fill="none" stroke="#7aa7f8" stroke-width="3">
+    <ellipse cx="93" cy="56" rx="85" ry="20"/>
+    <path d="M8 56 v88 c0 11 38 20 85 20s85-9 85-20V56"/>
+    <ellipse cx="820" cy="77" rx="87" ry="22"/>
+    <path d="M733 77v80c0 12 39 22 87 22s87-10 87-22V77"/>
+  </g>
+  <g fill="none" stroke="#55c883" stroke-width="3">
+    <ellipse cx="92" cy="260" rx="85" ry="20"/>
+    <path d="M7 260v86c0 12 38 21 85 21s85-9 85-21v-86"/>
+    <ellipse cx="820" cy="287" rx="87" ry="22"/>
+    <path d="M733 287v78c0 12 39 22 87 22s87-10 87-22v-78"/>
+  </g>
+
+  <text x="92" y="78" text-anchor="middle" font-family="Georgia, serif" font-size="21" fill="#1c2830">1AGW, 1BL6</text>
+  <text x="92" y="110" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">...6E4F</text>
+  <text x="92" y="141" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">...8H6T, 8H7F</text>
+  <text x="92" y="195" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">Non-covalent binders</text>
+  <text x="92" y="223" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">with PDBs</text>
+
+  <text x="92" y="282" text-anchor="middle" font-family="Georgia, serif" font-size="21" fill="#1c2830">1A0H, 1A0L</text>
+  <text x="92" y="314" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">...5P9J</text>
+  <text x="92" y="345" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">...9LPR, 9XIA</text>
+  <text x="92" y="392" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">Covalent binders</text>
+  <text x="92" y="418" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">with PDBs</text>
+
+  <rect x="224" y="18" width="230" height="172" fill="url(#panel)" stroke="#7aa7f8" stroke-width="2" stroke-dasharray="7 5"/>
+  <rect x="224" y="246" width="230" height="116" fill="#fbfffc" stroke="#58ca85" stroke-width="2" stroke-dasharray="7 5"/>
+  <rect x="520" y="63" width="205" height="88" fill="#fbfdff" stroke="#7aa7f8" stroke-width="2" stroke-dasharray="7 5"/>
+  <rect x="520" y="269" width="205" height="70" fill="#fbfffc" stroke="#58ca85" stroke-width="2" stroke-dasharray="7 5"/>
+
+  <g stroke="#8eb3ad" stroke-width="8" fill="none" opacity=".45">
+    <path d="M246 60c30-28 74-28 104 0s61 28 89 1"/>
+    <path d="M246 95c31 26 70 26 105-1s65-29 96 0"/>
+    <path d="M246 130c34-22 67-22 101 2s66 25 99 0"/>
+  </g>
+  <g stroke="#91bfc0" stroke-width="6" fill="none" opacity=".42">
+    <path d="M246 282c38-34 89-32 124 0s58 31 78 7"/>
+    <path d="M247 322c44 16 77 13 107-6s62-24 94-7"/>
+  </g>
+
+  <g stroke="#1d2528" stroke-width="2" fill="none">
+    <path d="M308 68l32 24 38-10 24 28-20 34-40 7-33-24 5-38z"/>
+    <path d="M279 119l26-17 30 16 1 35-31 17-29-16z"/>
+    <path d="M354 288l37 19 2 41-36 18-36-20-1-40z"/>
+  </g>
+  <g fill="#77a7f7">
+    <circle cx="340" cy="92" r="5"/><circle cx="402" cy="110" r="5"/><circle cx="305" cy="170" r="5"/>
+    <circle cx="520" cy="292" r="5"/><circle cx="598" cy="309" r="5"/>
+  </g>
+  <g fill="#d96c4f">
+    <circle cx="381" cy="82" r="5"/><circle cx="314" cy="89" r="5"/><circle cx="392" cy="348" r="5"/>
+  </g>
+  <g fill="#55c883">
+    <circle cx="321" cy="306" r="5"/><circle cx="357" cy="366" r="5"/><circle cx="640" cy="306" r="5"/>
+  </g>
+
+  <g stroke="#1d2528" stroke-width="2" fill="none">
+    <path d="M559 97l25-16 25 16v30l-25 16-25-16z"/>
+    <path d="M639 96l28-16 28 16v32l-28 17-28-17z"/>
+    <path d="M537 300l42 20 43-19"/>
+  </g>
+  <g fill="#d96c4f">
+    <circle cx="584" cy="81" r="5"/><circle cx="667" cy="80" r="5"/><circle cx="579" cy="320" r="5"/>
+  </g>
+  <g fill="#77a7f7">
+    <circle cx="609" cy="97" r="5"/><circle cx="695" cy="128" r="5"/>
+  </g>
+
+  <path d="M455 104h55" stroke="#77a7f7" stroke-width="8" marker-end="url(#arrow-blue)"/>
+  <path d="M455 300h55" stroke="#62c792" stroke-width="8" marker-end="url(#arrow-green)"/>
+  <path d="M719 107h40" stroke="#77a7f7" stroke-width="8" marker-end="url(#arrow-blue)"/>
+  <path d="M719 305h40" stroke="#62c792" stroke-width="8" marker-end="url(#arrow-green)"/>
+  <path d="M686 154l58 76" stroke="#77a7f7" stroke-width="7" marker-end="url(#arrow-blue)" opacity=".82"/>
+  <path d="M476 242l65-74" stroke="#77a7f7" stroke-width="7" marker-end="url(#arrow-blue)" opacity=".82"/>
+
+  <text x="337" y="217" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">Non-covalent ligands</text>
+  <text x="337" y="391" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">Covalent ligands</text>
+  <text x="623" y="188" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">Interaction-driven</text>
+  <text x="623" y="215" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">non-covalent fragments</text>
+  <text x="623" y="375" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">Distance-derived</text>
+  <text x="623" y="402" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">covalent fragments</text>
+  <text x="820" y="112" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">Non-covalent</text>
+  <text x="820" y="146" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">recombined library</text>
+  <text x="820" y="317" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#1c2830">Covalent</text>
+  <text x="820" y="351" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1c2830">recombined library</text>
+</svg>
