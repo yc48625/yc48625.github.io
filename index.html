@@ -1,213 +1,169 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Personal academic homepage for Xiaohe Xu, featuring research interests, selected highlights, and professional links."
+      content="徐小贺，博士研究生，研究方向为 CADD、AI for life science"
     />
-    <title>Xiaohe Xu | Personal Homepage</title>
+    <title>徐小贺 | 个人主页</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <canvas id="research-canvas" aria-hidden="true"></canvas>
 
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Xiaohe Xu homepage">
+      <a class="brand" href="#top" aria-label="徐小贺个人主页">
         <span class="brand-mark">XX</span>
-        <span>Xiaohe Xu</span>
+        <span>徐小贺</span>
       </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#presentation">Presentation</a>
-        <a href="#contact">Contact</a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#about">个人简介</a>
+        <a href="#research">研究方向</a>
+        <a href="#projects">过往项目</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">联系方式</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Personal Academic Homepage</p>
-          <h1>Xiaohe Xu</h1>
+          <p class="eyebrow">博士研究生</p>
+          <h1>徐小贺</h1>
           <p class="hero-text">
-            I am interested in research questions that connect evidence,
-            methods, and collaboration. This site gathers my academic profile,
-            selected highlights, and professional links in one place.
+            目前在中国科学院杭州医学研究所和澳门大学攻读博士学位。主要研究方向为
+            CADD以及AI for life science，包括小分子性质预测，变异检测以及免疫原性预测相关算法开发。
           </p>
           <div class="hero-actions" aria-label="Main actions">
-            <a class="button primary" href="#presentation">View Presentation</a>
-            <a
-              class="button secondary"
-              href="https://www.researchgate.net/profile/Xiaohe-Xu-5"
-              target="_blank"
-              rel="noreferrer"
-            >
-              ResearchGate
-            </a>
+            <a class="button primary" href="#research">查看研究方向</a>
           </div>
         </div>
 
-        <div class="orbit-panel" aria-label="Animated research topics">
+        <div class="orbit-panel" aria-label="动态研究方向展示">
           <div class="orbit-center">
-            <span>Research</span>
+            <span>研究</span>
           </div>
-          <span class="orbit-item item-a">Publications</span>
-          <span class="orbit-item item-b">Methods</span>
-          <span class="orbit-item item-c">Collaboration</span>
-          <span class="orbit-item item-d">Impact</span>
+          <span class="orbit-item item-a">CADD</span>
+          <span class="orbit-item item-b">AI for Life Science</span>
+          <span class="orbit-item item-c">肿瘤疫苗</span>
+          <span class="orbit-item item-d">算法开发</span>
         </div>
       </section>
 
       <section id="about" class="section intro-grid">
         <div>
-          <p class="section-label">About</p>
-          <h2>Research profile built for clarity.</h2>
+          <p class="section-label">个人简介</p>
         </div>
         <div class="section-body">
           <p>
-            Welcome to my personal academic homepage. I use this space to share
-            research interests, selected academic work, and updates related to
-            my professional development.
+            我始终保持对科研问题的好奇心和系统性思考习惯， 重视逻辑思维以及自我驱动。在学习和研究中，我倾向于从问题本质出发，追求概念清晰、论证自洽与方法上的可解释性。
+
           </p>
           <p>
-            My full publication record and research activity can also be found
-            through my ResearchGate profile, which is linked throughout this
-            page for convenient access.
+            专业研究之外，我也重视多元兴趣对个人视野的拓展。旅游、音乐、摄影、篮球以及电影等爱好，使我在科研之外保持对艺术表达、身体运动和生活体验的持续关注。我相信，跨学科的知识积累和丰富的生活感知，有助于形成更开放的问题意识和更具创造力的思考方式。
           </p>
         </div>
       </section>
 
       <section id="research" class="section research-section">
         <div class="section-heading">
-          <p class="section-label">Research</p>
-          <h2>Areas to highlight</h2>
+          <p class="section-label">当前研究方向</p>
         </div>
         <div class="topic-grid">
           <article class="topic-card">
+            <img
+              class="topic-image"
+              src="assets/vc.png"
+              alt="variant calling 当前研究方向示意图"
+            />
             <span class="topic-number">01</span>
-            <h3>Publication Record</h3>
+            <h3>variant calling</h3>
             <p>
-              Selected publications, manuscripts, and academic outputs are
-              organized to show the development of my research work.
+              引入RNA信息辅助DNA-based somatic variant calling
             </p>
           </article>
           <article class="topic-card">
+            <img
+              class="topic-image"
+              src="assets/tcr.png"
+              alt="pMHC-TCR 结合预测当前研究方向示意图"
+            />
             <span class="topic-number">02</span>
-            <h3>Research Interests</h3>
+            <h3>pMHC-TCR结合预测</h3>
             <p>
-              My research interests center on careful problem framing,
-              evidence-based analysis, and methods that support reproducible
-              results.
-            </p>
-          </article>
-          <article class="topic-card">
-            <span class="topic-number">03</span>
-            <h3>Collaboration</h3>
-            <p>
-              I value communication across disciplines and welcome thoughtful
-              academic exchange with researchers, students, and collaborators.
+              引入高质量结构提高序列模型能力
             </p>
           </article>
         </div>
       </section>
 
-      <section class="section timeline-section" aria-labelledby="timeline-title">
+      <section id="projects" class="section project-section">
         <div class="section-heading">
-          <p class="section-label">Academic Snapshot</p>
-          <h2 id="timeline-title">A compact personal timeline</h2>
+          <p class="section-label">过往项目经历</p>
         </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <span>Now</span>
-            <p>Maintain a public research profile and publication list.</p>
-          </div>
-          <div class="timeline-item">
-            <span>Focus</span>
-            <p>Develop clear summaries of research questions, methods, and outputs.</p>
-          </div>
-          <div class="timeline-item">
-            <span>Next</span>
-            <p>Continue expanding selected publications, projects, and academic notes.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="presentation" class="section presentation-section">
-        <div class="section-heading">
-          <p class="section-label">HTML Presentation</p>
-          <h2>Animated research introduction</h2>
-        </div>
-
-        <div class="presentation-shell">
-          <div class="slides" aria-live="polite">
-            <article class="slide is-active" data-slide="0">
-              <p class="slide-kicker">Slide 01</p>
-              <h3>Who I Am</h3>
-              <p>
-                This homepage presents my research identity, academic interests,
-                and professional profile in a concise format.
-              </p>
-            </article>
-            <article class="slide" data-slide="1">
-              <p class="slide-kicker">Slide 02</p>
-              <h3>What I Show</h3>
-              <p>
-                Visitors can quickly find research interests, selected work,
-                professional links, and a short overview of my academic focus.
-              </p>
-            </article>
-            <article class="slide" data-slide="2">
-              <p class="slide-kicker">Slide 03</p>
-              <h3>Why It Works</h3>
-              <p>
-                A clear public profile makes it easier to share research,
-                connect with collaborators, and keep academic work visible.
-              </p>
-            </article>
-          </div>
-
-          <div class="presentation-controls">
-            <button class="icon-button" id="prev-slide" type="button" aria-label="Previous slide">
-              <span aria-hidden="true">‹</span>
-            </button>
-            <div class="slide-dots" aria-label="Slide progress">
-              <button type="button" class="dot is-active" data-target="0" aria-label="Go to slide 1"></button>
-              <button type="button" class="dot" data-target="1" aria-label="Go to slide 2"></button>
-              <button type="button" class="dot" data-target="2" aria-label="Go to slide 3"></button>
+        <div class="project-grid">
+          <article class="project-card">
+            <img
+              class="project-image project-image-small"
+              src="assets/project-fbdd.jpg"
+              alt="基于 FBDD 以及蛋白-受体相互作用的共价化合物库设计示意图"
+            />
+            <div class="project-content">
+              <h3>基于 FBDD 以及蛋白-受体相互作用的共价化合物库设计</h3>
+              <p class="journal">Journal of Chemical Information and Modeling</p>
             </div>
-            <button class="icon-button" id="next-slide" type="button" aria-label="Next slide">
-              <span aria-hidden="true">›</span>
-            </button>
-          </div>
-          <div class="progress-track" aria-hidden="true">
-            <span id="slide-progress"></span>
-          </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              class="project-image"
+              src="assets/project-graph-prompt-clean.jpg"
+              alt="基于条件感知图提示的小分子性质预测模型示意图"
+            />
+            <div class="project-content">
+              <h3>基于条件感知图提示的小分子性质预测模型</h3>
+              <p class="journal">Nature Communications（在投）</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="section intro-grid">
+        <div>
+          <p class="section-label">Publications</p>
+        </div>
+        <div class="section-body">
+          <p>
+            ResearchGate：
+            <a
+              class="email-link"
+              href="https://www.researchgate.net/profile/Xiaohe-Xu-5"
+              target="_blank"
+              rel="noreferrer"
+            >
+              https://www.researchgate.net/profile/Xiaohe-Xu-5
+            </a>
+          </p>
         </div>
       </section>
 
       <section id="contact" class="section contact-section">
         <div>
-          <p class="section-label">Contact</p>
-          <h2>Find the full profile online.</h2>
+          <p class="section-label">联系方式</p>
         </div>
-        <div class="contact-actions">
-          <a
-            class="button primary"
-            href="https://www.researchgate.net/profile/Xiaohe-Xu-5"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Open ResearchGate
-          </a>
-          <a class="button secondary" href="#top">Back to top</a>
+        <div class="section-body">
+          <p>
+            邮箱：<a class="email-link" href="mailto:yc48625@um.edu.mo">yc48625@um.edu.mo</a>
+          </p>
         </div>
       </section>
+
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> Xiaohe Xu. Built with HTML, CSS, and JavaScript.</p>
+      <p>&copy; <span id="year"></span> 徐小贺.</p>
     </footer>
 
     <script src="script.js"></script>
